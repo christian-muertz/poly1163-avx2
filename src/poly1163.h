@@ -9,7 +9,7 @@ typedef struct {
 
 void poly1163_init(POLY1163_CTX* ctx, unsigned char *key);
 
-void poly1163_update(POLY1163_CTX* ctx, unsigned char *data, size_t len);
+void poly1163_update(POLY1163_CTX* ctx, const unsigned char *data, size_t len);
 
 void poly1163_finalize(POLY1163_CTX* ctx, void* out);
 

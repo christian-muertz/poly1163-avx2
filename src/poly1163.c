@@ -359,7 +359,7 @@ void poly1163_finalize(POLY1163_CTX *ctx, void *out)
 }
 
 void core(const unsigned char *in, uint64_t len, Opaque *opaque);
-void poly1163_update(POLY1163_CTX *ctx, uint8_t *in, size_t len)
+void poly1163_update(POLY1163_CTX *ctx, const uint8_t *in, size_t len)
 {
     Opaque *opaque = (Opaque *)ctx->opaque;
 
